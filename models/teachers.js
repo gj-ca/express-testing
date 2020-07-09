@@ -5,6 +5,10 @@ const TeachersSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    id: {
+        type: Number,
+        required: true,
+    },
     pay: {
         type: Number,
         required: true
@@ -15,6 +19,4 @@ const TeachersSchema = new mongoose.Schema({
     }
 })
 
-TeachersModel = mongoose.model("Teachers", TeachersSchema)
-
-module.exports = TeachersModel
+module.exports = mongoose.model("Teachers", TeachersSchema)
