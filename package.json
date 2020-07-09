@@ -4,7 +4,7 @@
   "description": "demo mongo install",
   "main": "server.js",
   "scripts": {
-    "test": "mocha app_test.js --exit"
+    "test": "ENV=`test` mocha app_test.js --exit"
   },
   "author": "",
   "license": "ISC",
